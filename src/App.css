@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.book{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 30%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.book img{
+  width: 50%;
+  object-fit: cover;
+}
+.book_desc span{
+  width: 30%;
+}
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.home-container button{
+  padding: 10px;
+  margin-top: 20px;
+}
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 50px;
+}
+.operation{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+.operation button{
+  margin-bottom: 20px;
+  width: 50%;
+  padding: 10px;
+}
+.form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.form input{
+  width: 20%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form button{
+  padding: 10px 50px;
+  font-size: 20px;
 }
